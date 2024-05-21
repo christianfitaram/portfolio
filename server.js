@@ -15,7 +15,7 @@ const contactEmail = createTransport({
   service: '',
   auth: {
     user: "christianfitaramirez@icloud.com",
-    pass: "dfqi-coic-gtny-omts"
+    pass: ""
   },
 });
 
