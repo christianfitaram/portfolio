@@ -25,7 +25,7 @@ export const Projects = () => {
                                         <Card.Title>Hangman</Card.Title>
                                         <Card.Text className='width100 text-align-left'>
                                             Inspired by the famous "hangman" game, this is an application developed in Java, designed to be executed on the console.
-                                            This was part of an assignment in the first months of school, so the structure and designs are basic.
+                                            This was part of an assignment in the first months of school, so the structure and designs are basic. There is also a modularized version using C#. 
                                         </Card.Text>
                                         <Button variant="primary" onClick={() => window.open(
                                             "https://github.com/christianfitaram?tab=repositories", "_blank")}>Go to repository</Button>
