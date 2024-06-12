@@ -9,11 +9,11 @@ const app = express();
 app.use(cors());
 app.use(json());
 app.use("/portfolio", router);
-app.listen(587, () => console.log("Server Running"));
+app.listen(5000, () => console.log("Server Running"));
 
 
 const contactEmail = createTransport({
-  service: "smtp.mail.me.com",
+  server: "",
   auth: {
     user: "christianfitaramirez@icloud.com",
     pass: process.env.APP_PASSWORD,
