@@ -1,6 +1,7 @@
 import express, { Router, json } from "express";
 const router = Router();
 import cors from "cors";
+import nodemailer from "nodemailer";
 import { createTransport } from "nodemailer";
 
 // server used to send send emails
@@ -8,14 +9,14 @@ const app = express();
 app.use(cors());
 app.use(json());
 app.use("/", router);
-app.listen(5175, () => console.log("Server Running"));
+app.listen(5074, () => console.log("Server Running"));
 
 
 const contactEmail = createTransport({
-  service: '',
+  service: "Apple",
   auth: {
     user: "christianfitaramirez@icloud.com",
-    pass: ""
+    pass: process.env.APP_PASSWORD,
   },
 });
 

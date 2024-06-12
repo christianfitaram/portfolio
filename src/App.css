@@ -27,6 +27,24 @@
   --header-border: hsla(0,0%,100%,.08);
   --tw-bg-opacity: 1;
   --header-blur: 12px;
+  --ifm-leading-desktop: 1.25;
+  --ifm-leading: calc(var(--ifm-leading-desktop)*1rem);
+  --ifm-paragraph-margin-bottom: var(--ifm-leading);
+  --ifm-blockquote-border-left-width: 2px;
+  --ifm-color-gray-700: #606770;
+  --ifm-color-emphasis-300: var(--ifm-color-gray-700);
+  --ifm-blockquote-border-color: var(--ifm-color-emphasis-300);
+  --ifm-blockquote-shadow: none;
+  --ifm-color-gray-200: #ebedf0;
+  --ifm-color-emphasis-800: var(--ifm-color-gray-200);
+  --ifm-blockquote-color: var(--ifm-color-emphasis-800);
+  --ifm-blockquote-padding-vertical: 0;
+  --ifm-global-spacing: 1rem;
+  --ifm-spacing-horizontal: var(--ifm-global-spacing);
+  --ifm-blockquote-padding-horizontal: var(--ifm-spacing-horizontal);
+  --ifm-font-size-base: 100%;
+  --ifm-blockquote-font-size: var(--ifm-font-size-base);
+  --ifm-spacing-vertical: var(--ifm-global-spacing);
 
 }
 * {
@@ -701,6 +719,34 @@ justify-content: center;
   width: 35%;
   right: 0;
   z-index: -4;
+}
+/************ Education ************/
+.education {
+  padding: 60px 0;
+  font-size: 18px;
+  position: relative;
+  background-image: conic-gradient(from 90deg at -10% 100%, #2b303b 0deg, #2b303b 90deg, #16181d 1turn);
+}
+.wrapper{
+  display: flex !important;
+  column-gap: 20px;
+}
+.education p {
+
+  margin: 0 0 var(--ifm-paragraph-margin-bottom);
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+.education div{
+  margin-bottom: 20px;
+}
+.education blockquote {
+  border-left: var(--ifm-blockquote-border-left-width) solid var(--ifm-blockquote-border-color);
+  box-shadow: var(--ifm-blockquote-shadow);
+  color: var(--ifm-blockquote-color);
+  font-size: var(--ifm-blockquote-font-size);
+  margin: 0 0 var(--ifm-spacing-vertical);
+  padding: var(--ifm-blockquote-padding-vertical) var(--ifm-blockquote-padding-horizontal);
 }
 /************ Contact Form Css ************/
 .contact {

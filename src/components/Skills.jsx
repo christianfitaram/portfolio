@@ -6,13 +6,13 @@ import csharpicon from "../assets/img/csharp.svg";
 import phpincon from "../assets/img/php.svg";
 import jsicon from "../assets/img/javascript.svg";
 import sqlicon from "../assets/img/sql.svg";
+import postgresql from "../assets/img/postgresql-icon.svg";
 import { Col, Container, Row } from 'react-bootstrap';
 import 'animate.css';
 import TrackVisibility from "react-on-screen";
 
 export const Skills = () => {
     return (
-
         <section className="skill" id="skills">
             <div className="container">
                 <div className="card-pro example-3">
@@ -86,12 +86,12 @@ export const Skills = () => {
                                                 </div>
                                                 <div className='grid-6 item'>
                                                     <div className='VPFeature'onClick={() => window.open(
-                                                            "https://dev.mysql.com/doc/", "_blank")}>
+                                                            "https://www.postgresql.org/docs/", "_blank")}>
                                                         <article className="box" data-v-12ebaba5="">
                                                             <div className="icon" data-v-12ebaba5="">
-                                                                <img src={sqlicon} alt='java' />
+                                                                <img src={postgresql} alt='java' />
                                                             </div>
-                                                            <h2 className="title" data-v-12ebaba5="">SQL</h2>
+                                                            <h2 className="title" data-v-12ebaba5="">PostgreSQL</h2>
                                                         </article>
                                                     </div>
                                                 </div>
