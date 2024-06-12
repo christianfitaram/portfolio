@@ -8,12 +8,12 @@ import { createTransport } from "nodemailer";
 const app = express();
 app.use(cors());
 app.use(json());
-app.use("/", router);
-app.listen(5074, () => console.log("Server Running"));
+app.use("/portfolio", router);
+app.listen(587, () => console.log("Server Running"));
 
 
 const contactEmail = createTransport({
-  service: "Apple",
+  service: "smtp.mail.me.com",
   auth: {
     user: "christianfitaramirez@icloud.com",
     pass: process.env.APP_PASSWORD,
