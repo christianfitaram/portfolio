@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
   // console.log( process.env);  Log loaded env variables
   return {
     plugins: [react()],
-    base: '/',
+    base: '/portfolio',
     define: {
       'process.env':process.env
     }
