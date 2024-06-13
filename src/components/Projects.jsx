@@ -1,6 +1,5 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import javaicon from "../assets/img/javaicon.svg";
 import rubyicon from "../assets/img/ruby.svg";
@@ -11,7 +10,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from "react-on-screen";
 export const Projects = () => {
-    return (
+  return (
         <section className="project" id="projects">
             <Container>
                 <Row>
