@@ -1,6 +1,7 @@
 {
   "homepage": "https://christianfitaram.github.io/portfolio",
   "name": "myportfolio",
+  "proxy": "http://localhost:5026",
   "private": true,
   "version": "0.0.0",
   "type": "module",

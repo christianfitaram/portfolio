@@ -10,12 +10,6 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Education from './components/Education';
 function App() {
-  if(process.env.VITE_value != undefined){
-    console.log(process.env.VITE_value);
-    console.log('found');
-  }else{
-    console.log('NOT found');
-  }
   
   const [count, setCount] = useState(0)
   return (

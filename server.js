@@ -3,7 +3,6 @@ import express, { Router, json } from "express";
 const router = Router();
 import cors from "cors";
 import nodemailer from "nodemailer";
-import { createTransport } from "nodemailer";
 // server used to send send emails
 const app = express();
 app.use(cors());
@@ -15,7 +14,7 @@ app.listen(5026, () => console.log("Server Running"));
 const contactEmail = nodemailer.createTransport({
   // This is the SMTP mail server to use for notifications. 
   // GCDS uses this mail server as a relay host.
-  host: "smtp-mail.outlook.com",
+  host: "smtp.gmail.com",
   // SMTP is unlike most network protocols, which only have a single port number. 
   // SMTP has at least 3. They are port numbers 25, 587, and 465.
   // Port 25 is still widely used as a **relay** port from one server to another.
@@ -28,8 +27,8 @@ const contactEmail = nodemailer.createTransport({
   // 25 keep it false
   secure: false, // use TLS
   auth: {
-    user: 'christianfitaramirez@outlook.com',
-    pass: 'ylzayzgyyqjpeiqm',
+    user: 'christianfitaram@gmail.com',
+    pass: 'fuub bmgh fytv rfoj',
   },
 });
 
@@ -43,14 +42,15 @@ contactEmail.verify((error) => {
   }
 });
 
-router.post("contact", (req, res) => {
+router.post("/contact", (req, res) => {
+  console.log("You are in contact");
   const name = req.body.firstName + req.body.lastName;
   const email = req.body.email;
   const message = req.body.message;
   const phone = req.body.phone;
   const mail = {
     from: name,
-    to: "christianfitaramirez@icloud.com",
+    to: "christianfitaram@gmail.com",
     subject: "Contact Form Submission - Portfolio",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>
