@@ -12,7 +12,7 @@ import nextjs from "../assets/img/next-js.svg"
 import 'animate.css';
 import TrackVisibility from "react-on-screen";
 export const Projects = () => {
-  return (
+    return (
         <section className="project" id="projects">
             <Container>
                 <Row>
@@ -41,17 +41,19 @@ export const Projects = () => {
                             <Col xs={12} md={6} className='margin-bottom-20px'>
                                 <Card data-bs-theme="dark">
                                     <Card.Header as="h5">Project #2
-                                    <div className='social-icon iconSmall'><img src={typescript} alt='typescript icon' /></div>
-                                    <div className='social-icon iconSmall'><img src={nextjs} alt='nextjs icon' /></div>
-                                    <div className='social-icon iconSmall'><img src={reacticon} alt='react icon' /></div>
+                                        <div className='social-icon iconSmall'><img src={typescript} alt='typescript icon' /></div>
+                                        <div className='social-icon iconSmall'><img src={nextjs} alt='nextjs icon' /></div>
+                                        <div className='social-icon iconSmall'><img src={reacticon} alt='react icon' /></div>
                                     </Card.Header>
                                     <Card.Body className='regularText'>
                                         <Card.Title>The Pokemon APP</Card.Title>
                                         <Card.Text className='width100 text-align-left'>
-                                        A single page web application that displays an interactive list of pokemons which it retrieves from an external public API and it is also possible to see the individual details of each pokemon. It was made using NextJS, React and TypeScript.
+                                            A single page web application that displays an interactive list of pokemons which it retrieves from an external public API and it is also possible to see the individual details of each pokemon. It was made using NextJS, React and TypeScript.
                                         </Card.Text>
                                         <Button variant="primary" onClick={() => window.open(
-                                            "https://github.com/christianfitaram/the-pokemon-app", "_blank")}>Go to repository</Button>
+                                            "https://github.com/christianfitaram/the-pokemon-app", "_blank")}>Go to repository</Button>&nbsp;
+                                        <Button variant="primary" onClick={() => window.open(
+                                            "https://the-pokemon-app-two.vercel.app", "_blank")}>Go to App</Button>
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -83,7 +85,7 @@ export const Projects = () => {
                                         <Card.Text className='width100 text-align-left'>
                                             My portfolio was made using react, react-bootstrap, animate.css, nodemailer, and express.
                                             I got inspiration from the philosophy of "less design is the better design and the said components' official websites.
-                                            <br/>
+                                            <br />
                                         </Card.Text>
                                         <Button variant="primary" onClick={() => window.open(
                                             "https://github.com/christianfitaram/portfolio", "_blank")}>Go to repository</Button>
