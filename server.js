@@ -7,7 +7,7 @@ import nodemailer from "nodemailer";
 const app = express();
 app.use(cors());
 app.use(json());
-app.use("/portfolio", router);
+app.use("/", router);
 app.listen(5026, () => console.log("Server Running"));
 
 //transport configuration for user a site server to send an email.
