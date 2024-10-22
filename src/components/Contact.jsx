@@ -27,7 +27,7 @@ export const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setButtonText("Sending...");
-        let response = await fetch("contact", {
+        let response = await fetch("https://christianfitaram.github.io/portfolio/contact", {
           method: "POST",
           headers: {
             "Content-Type": "application/json;charset=utf-8",
